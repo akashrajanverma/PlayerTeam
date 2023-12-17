@@ -14,18 +14,18 @@ public class TeamController {
     @Autowired
     private TeamService teamService;
 
-    @GetMapping("/list")
-    public List<Team> fetchAll(){
-        return teamService.fetchAll();
-    }
-
-    @GetMapping("/{id}")
-    public Team obtainTeamById(@PathVariable("id") long team_id){
-        return teamService.obtainTeamById(team_id);
-    }
-
-    @PostMapping("/save")
-    public Team save(@RequestBody Team team){
-        return teamService.save(team);
-    }
+//    @GetMapping("/list")
+//    public List<Team> fetchAll(){
+//        return teamService.fetchAll();
+//    }
+//
+//    @GetMapping("/{id}")
+//    public Team obtainTeamById(@PathVariable("id") long team_id){
+//        return teamService.obtainTeamById(team_id);
+//    }
+//
+//    @PostMapping("/save")
+//    public Team save(@RequestBody Team team){
+//        return teamService.save(team);
+//    }
 }

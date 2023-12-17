@@ -14,22 +14,22 @@ import java.util.List;
 
 @Service
 public class TeamService {
-    @Autowired
-    private TeamRepo teamRepo;
-
-    @Autowired
-    private PlayerRepo playerRepo;
-
-    public List<Team> fetchAll(){
-        return teamRepo.findAll();
-    }
-
-    public Team obtainTeamById(long team_id){
-        Team res = teamRepo.findById(team_id).get();
-        return res;
-    }
-
-    public Team save(Team team) {
-        return teamRepo.save(team);
-    }
+//    @Autowired
+//    private TeamRepo teamRepo;
+//
+//    @Autowired
+//    private PlayerRepo playerRepo;
+//
+//    public List<Team> fetchAll(){
+//        return teamRepo.findAll();
+//    }
+//
+//    public Team obtainTeamById(long team_id){
+//        Team res = teamRepo.findById(team_id).get();
+//        return res;
+//    }
+//
+//    public Team save(Team team) {
+//        return teamRepo.save(team);
+//    }
 }

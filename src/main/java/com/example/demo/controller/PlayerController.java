@@ -22,19 +22,19 @@ public class PlayerController {
         return "Hello World !!!";
     }
 
-    @GetMapping("/all")
-    public List<Player> getAllPlayers(){
-        return playerService.getAllPlayers();
-    }
-
-    @GetMapping("/{id}")
-    public Player getPlayer(@PathVariable("id") long id){
-        return playerService.getPlayerById(id).get();
-    }
-
-    @PostMapping("/save")
-    public Player savePlayer(@RequestBody Player player){
-        System.out.println("hiiiii" + player.getName());
-        return playerService.save(player);
-    }
+//    @GetMapping("/all")
+//    public List<Player> getAllPlayers(){
+//        return playerService.getAllPlayers();
+//    }
+//
+//    @GetMapping("/{id}")
+//    public Player getPlayer(@PathVariable("id") long id){
+//        return playerService.getPlayerById(id).get();
+//    }
+//
+//    @PostMapping("/save")
+//    public Player savePlayer(@RequestBody Player player){
+//        System.out.println("hiiiii" + player.getName());
+//        return playerService.save(player);
+//    }
 }
