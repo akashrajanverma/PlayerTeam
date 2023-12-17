@@ -17,6 +17,11 @@ public class PlayerController {
     @Autowired
     private PlayerService playerService;
 
+    @GetMapping
+    public String helloWorld() {
+        return "Hello World !!!";
+    }
+
     @GetMapping("/all")
     public List<Player> getAllPlayers(){
         return playerService.getAllPlayers();
